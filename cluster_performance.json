@@ -1,0 +1,302 @@
+{
+    "cityblock": {
+        "bissecting_kmeans": {
+            "silhouete_score": 0.014997387336918782,
+            "davies_bouldin_score": 2.3279213357400255,
+            "calinski_harabasz_score": 149.60017568689088,
+            "cluster_centers": 8
+        },
+        "kmeans": {
+            "silhouete_score": -0.07756193184294259,
+            "davies_bouldin_score": 2.598420478079724,
+            "calinski_harabasz_score": 129.7276428539026,
+            "cluster_centers": 8
+        },
+        "affinity_propagation": {
+            "silhouete_score": -0.22103026693774247,
+            "davies_bouldin_score": 3.0475043009848597,
+            "calinski_harabasz_score": 7.504114953843399,
+            "cluster_centers": 737
+        },
+        "agglomerative": {
+            "silhouete_score": -0.2626349867609078,
+            "davies_bouldin_score": 1.7246957829512874,
+            "calinski_harabasz_score": 0.8032908963533207,
+            "cluster_centers": 2
+        },
+        "DBSCAN": {
+            "silhouete_score": -0.004148616855005875,
+            "davies_bouldin_score": 0.7901604674744865,
+            "calinski_harabasz_score": 51.83423431325961,
+            "cluster_centers": 124
+        },
+        "HDBSCAN": {
+            "silhouete_score": -0.07442946131678821,
+            "davies_bouldin_score": 5.132940428601084,
+            "calinski_harabasz_score": 30.045660127067052,
+            "cluster_centers": 208
+        },
+        "OPTICS": {
+            "silhouete_score": -0.009254514309756181,
+            "davies_bouldin_score": 1.0387555154749029,
+            "calinski_harabasz_score": 52.670090655683005,
+            "cluster_centers": 127
+        },
+        "Birch": {
+            "silhouete_score": 0.013670762546941963,
+            "davies_bouldin_score": 3.916643628455466,
+            "calinski_harabasz_score": 152.89759380267276,
+            "cluster_centers": 3
+        }
+    },
+    "cosine": {
+        "bissecting_kmeans": {
+            "silhouete_score": 0.12833701563420916,
+            "davies_bouldin_score": 2.0096624568348402,
+            "calinski_harabasz_score": 365.77263797492634,
+            "cluster_centers": 8
+        },
+        "kmeans": {
+            "silhouete_score": 0.10067924994937853,
+            "davies_bouldin_score": 1.7300028425057847,
+            "calinski_harabasz_score": 421.47106677380935,
+            "cluster_centers": 8
+        },
+        "affinity_propagation": {
+            "silhouete_score": 0.031515963886167196,
+            "davies_bouldin_score": 11610.84436537602,
+            "calinski_harabasz_score": 24.4003040910104,
+            "cluster_centers": 665
+        },
+        "agglomerative": {
+            "silhouete_score": -0.29998726974296464,
+            "davies_bouldin_score": 3.1617304846679644,
+            "calinski_harabasz_score": 0.1836606539848378,
+            "cluster_centers": 2
+        },
+        "DBSCAN": {
+            "silhouete_score": -0.2246786071463837,
+            "davies_bouldin_score": 4.781186924122022,
+            "calinski_harabasz_score": 2.3632232563094253,
+            "cluster_centers": 1
+        },
+        "HDBSCAN": {
+            "silhouete_score": 0.006014329666077261,
+            "davies_bouldin_score": 3.91520769975271,
+            "calinski_harabasz_score": 21.260638968394705,
+            "cluster_centers": 231
+        },
+        "OPTICS": {
+            "silhouete_score": 0.0165038662757409,
+            "davies_bouldin_score": 0.9863481184035938,
+            "calinski_harabasz_score": 32.34759068736259,
+            "cluster_centers": 132
+        },
+        "Birch": {
+            "silhouete_score": 0.09972430298935583,
+            "davies_bouldin_score": 2.7567655309904056,
+            "calinski_harabasz_score": 373.86924539606645,
+            "cluster_centers": 3
+        }
+    },
+    "euclidean": {
+        "bissecting_kmeans": {
+            "silhouete_score": -0.008508005178137072,
+            "davies_bouldin_score": 2.3583371747768305,
+            "calinski_harabasz_score": 145.69885144975325,
+            "cluster_centers": 8
+        },
+        "kmeans": {
+            "silhouete_score": -0.07390958614180107,
+            "davies_bouldin_score": 2.521035577675491,
+            "calinski_harabasz_score": 137.11090665664395,
+            "cluster_centers": 8
+        },
+        "affinity_propagation": {
+            "silhouete_score": -0.16002069835257965,
+            "davies_bouldin_score": 24715.619428274033,
+            "calinski_harabasz_score": 9.854469843265303,
+            "cluster_centers": 636
+        },
+        "agglomerative": {
+            "silhouete_score": -0.27355496790981537,
+            "davies_bouldin_score": 1.84491902527744,
+            "calinski_harabasz_score": 0.7083640958779762,
+            "cluster_centers": 2
+        },
+        "DBSCAN": {
+            "silhouete_score": 0.05345108601037567,
+            "davies_bouldin_score": 0.7039280229008615,
+            "calinski_harabasz_score": 65.65422041104375,
+            "cluster_centers": 124
+        },
+        "HDBSCAN": {
+            "silhouete_score": -0.012920159279554264,
+            "davies_bouldin_score": 4.885830749727835,
+            "calinski_harabasz_score": 37.33383897862871,
+            "cluster_centers": 208
+        },
+        "OPTICS": {
+            "silhouete_score": 0.05166393925444432,
+            "davies_bouldin_score": 0.9040256170462331,
+            "calinski_harabasz_score": 66.33915311976581,
+            "cluster_centers": 127
+        },
+        "Birch": {
+            "silhouete_score": -0.008279858101218429,
+            "davies_bouldin_score": 3.8021548716340927,
+            "calinski_harabasz_score": 155.21769473633353,
+            "cluster_centers": 3
+        }
+    },
+    "l1": {
+        "bissecting_kmeans": {
+            "silhouete_score": 0.014997387336918782,
+            "davies_bouldin_score": 2.3279213357400255,
+            "calinski_harabasz_score": 149.60017568689088,
+            "cluster_centers": 8
+        },
+        "kmeans": {
+            "silhouete_score": -0.07756193184294259,
+            "davies_bouldin_score": 2.598420478079724,
+            "calinski_harabasz_score": 129.7276428539026,
+            "cluster_centers": 8
+        },
+        "affinity_propagation": {
+            "silhouete_score": -0.2186589155599455,
+            "davies_bouldin_score": 2.79027262158286,
+            "calinski_harabasz_score": 7.553511236408223,
+            "cluster_centers": 722
+        },
+        "agglomerative": {
+            "silhouete_score": -0.2626349867609078,
+            "davies_bouldin_score": 1.7246957829512874,
+            "calinski_harabasz_score": 0.8032908963533207,
+            "cluster_centers": 2
+        },
+        "DBSCAN": {
+            "silhouete_score": -0.004148616855005875,
+            "davies_bouldin_score": 0.7901604674744865,
+            "calinski_harabasz_score": 51.83423431325961,
+            "cluster_centers": 124
+        },
+        "HDBSCAN": {
+            "silhouete_score": -0.07442946131678821,
+            "davies_bouldin_score": 5.132940428601084,
+            "calinski_harabasz_score": 30.045660127067052,
+            "cluster_centers": 208
+        },
+        "OPTICS": {
+            "silhouete_score": -0.009254514309756181,
+            "davies_bouldin_score": 1.0387555154749029,
+            "calinski_harabasz_score": 52.670090655683005,
+            "cluster_centers": 127
+        },
+        "Birch": {
+            "silhouete_score": 0.013670762546941963,
+            "davies_bouldin_score": 3.916643628455466,
+            "calinski_harabasz_score": 152.89759380267276,
+            "cluster_centers": 3
+        }
+    },
+    "l2": {
+        "bissecting_kmeans": {
+            "silhouete_score": -0.008508005178137072,
+            "davies_bouldin_score": 2.3583371747768305,
+            "calinski_harabasz_score": 145.69885144975325,
+            "cluster_centers": 8
+        },
+        "kmeans": {
+            "silhouete_score": -0.07390958614180107,
+            "davies_bouldin_score": 2.521035577675491,
+            "calinski_harabasz_score": 137.11090665664395,
+            "cluster_centers": 8
+        },
+        "affinity_propagation": {
+            "silhouete_score": -0.18183231213846673,
+            "davies_bouldin_score": 2.956325102537349,
+            "calinski_harabasz_score": 7.22684892798109,
+            "cluster_centers": 861
+        },
+        "agglomerative": {
+            "silhouete_score": -0.27355496790981537,
+            "davies_bouldin_score": 1.84491902527744,
+            "calinski_harabasz_score": 0.7083640958779762,
+            "cluster_centers": 2
+        },
+        "DBSCAN": {
+            "silhouete_score": 0.05345108601037567,
+            "davies_bouldin_score": 0.7039280229008615,
+            "calinski_harabasz_score": 65.65422041104375,
+            "cluster_centers": 124
+        },
+        "HDBSCAN": {
+            "silhouete_score": -0.012920159279554264,
+            "davies_bouldin_score": 4.885830749727835,
+            "calinski_harabasz_score": 37.33383897862871,
+            "cluster_centers": 208
+        },
+        "OPTICS": {
+            "silhouete_score": 0.05166393925444432,
+            "davies_bouldin_score": 0.9040256170462331,
+            "calinski_harabasz_score": 66.33915311976581,
+            "cluster_centers": 127
+        },
+        "Birch": {
+            "silhouete_score": -0.008279858101218429,
+            "davies_bouldin_score": 3.8021548716340927,
+            "calinski_harabasz_score": 155.21769473633353,
+            "cluster_centers": 3
+        }
+    },
+    "manhattan": {
+        "bissecting_kmeans": {
+            "silhouete_score": 0.014997387336918782,
+            "davies_bouldin_score": 2.3279213357400255,
+            "calinski_harabasz_score": 149.60017568689088,
+            "cluster_centers": 8
+        },
+        "kmeans": {
+            "silhouete_score": -0.07756193184294259,
+            "davies_bouldin_score": 2.598420478079724,
+            "calinski_harabasz_score": 129.7276428539026,
+            "cluster_centers": 8
+        },
+        "affinity_propagation": {
+            "silhouete_score": -0.20903179469269959,
+            "davies_bouldin_score": 10531.370009143588,
+            "calinski_harabasz_score": 8.900634299557415,
+            "cluster_centers": 596
+        },
+        "agglomerative": {
+            "silhouete_score": -0.2626349867609078,
+            "davies_bouldin_score": 1.7246957829512874,
+            "calinski_harabasz_score": 0.8032908963533207,
+            "cluster_centers": 2
+        },
+        "DBSCAN": {
+            "silhouete_score": -0.004148616855005875,
+            "davies_bouldin_score": 0.7901604674744865,
+            "calinski_harabasz_score": 51.83423431325961,
+            "cluster_centers": 124
+        },
+        "HDBSCAN": {
+            "silhouete_score": -0.07442946131678821,
+            "davies_bouldin_score": 5.132940428601084,
+            "calinski_harabasz_score": 30.045660127067052,
+            "cluster_centers": 208
+        },
+        "OPTICS": {
+            "silhouete_score": -0.009254514309756181,
+            "davies_bouldin_score": 1.0387555154749029,
+            "calinski_harabasz_score": 52.670090655683005,
+            "cluster_centers": 127
+        },
+        "Birch": {
+            "silhouete_score": 0.013670762546941963,
+            "davies_bouldin_score": 3.916643628455466,
+            "calinski_harabasz_score": 152.89759380267276,
+            "cluster_centers": 3
+        }
+    }
+}
