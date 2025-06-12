@@ -18,11 +18,14 @@ Select one option from the menu below:
             continue
 
         if(option_input == 2):
-            try:
-                project_id = int(input("Enter a project ID: \n"))
-            except:
-                print("The project ID should be a integer")
-                break
+            project_id = int(input("Enter a project ID: \n"))
+            XAI_Agent.generate_explanation(project_id)
+            # try:
+            #     project_id = int(input("Enter a project ID: \n"))
+            #     XAI_Agent.generate_explanation(project_id)
+            # except:
+            #     print("The project ID should be a integer")
+            #     break
 
 
 
