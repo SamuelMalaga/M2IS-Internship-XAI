@@ -21,15 +21,23 @@ def get_project(project_id: int) -> Project | None:
             cost = found_project['cost'], 
             category = found_project['category'],
             district=found_project['agg_quartiers'],
-            district_code=found_project['src_district_code']
+            district_code=found_project['src_district_code'],
+            vote_count=found_project['votes']
         )
-        return proj_obj
+        approved_project = bool(found_project['approved'])
+
+        if not approved_project:
+            return proj_obj
+        else:
+            return None
     except IndexError:
         raise ProjectNotFoundException("The passed project ID is either out of bounds or the project ID does not exists")
 
 def get_same_district_winners(project:Project) -> list[Project]:
 
     district_winners_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==True)]
+
+    district_winners_df.sort_values(by='votes')
 
     district_winners_projects = []
 
@@ -41,9 +49,17 @@ def get_same_district_winners(project:Project) -> list[Project]:
             cost = row['cost'], 
             category = row['category'],
             district=row['agg_quartiers'],
-            district_code=row['src_district_code']
+            district_code=row['src_district_code'],
+            vote_count=row['votes']
         )
 
         district_winners_projects.append(project)
 
     return district_winners_projects
+
+def get_district_vote_threshold(project:Project) -> int:
+
+    district_winners_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==True)]
+
+    return district_winners_df.min(axis=0)['votes']
+

@@ -16,9 +16,11 @@ def compute_voter_overlap(target_project:Project, compared_project:Project) -> f
     target_project_voters = target_project_votes['ID'].unique().tolist()
     compared_project_voters = compared_project_votes['ID'].unique().tolist()
 
-    overlap_set = list(set(target_project_voters) & set(compared_project_voters))  
+    intersection = set(target_project_voters) & set(compared_project_voters)
 
-    return len(overlap_set)/len(target_project_voters)
+    union = set(target_project_voters) | set(compared_project_voters)
+
+    return len(intersection)/len(union)
 
 
 ## This function is based on merge sort
