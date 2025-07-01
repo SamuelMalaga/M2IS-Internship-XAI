@@ -72,7 +72,8 @@ def rank_overlap(target_project:Project, projects_to_rank:list[Project]) -> None
             k += 1
 
 
-def hello_over():
-    file_path  = Path(__file__)
-    great_grandp=file_path.parent.parent.parent
-    print(f"Hello from over aaa -> {great_grandp}")
+def get_vote_data() -> pd.DataFrame:
+    
+    vote_data = VOTER_MATRIX.copy()
+
+    return vote_data

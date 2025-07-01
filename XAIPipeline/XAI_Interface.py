@@ -1,4 +1,5 @@
 from Agent import XAI_Agent
+from Modules.ElectionModule import ELECMOD
 
 def launch_menu():
     while True:
@@ -14,7 +15,7 @@ Select one option from the menu below:
             break
 
         if(option_input == 1):
-            print("Imagine stats about the election")
+            print(ELECMOD.calculate_exclusion_ratio())
             continue
 
         if(option_input == 2):

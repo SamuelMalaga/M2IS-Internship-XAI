@@ -1,5 +1,4 @@
 import configparser
-import pathlib
 from Models.Project import Project
 from Modules.OverlappingModule import OVERMOD
 from Modules.ProjectModule import PROJMOD

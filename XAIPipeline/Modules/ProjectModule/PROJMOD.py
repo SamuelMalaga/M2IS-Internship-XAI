@@ -98,3 +98,9 @@ def get_all_projects()->list[Project]:
 
     return all_projects
 
+def get_project_data() -> pd.DataFrame:
+
+    project_data = PROJECTS.copy()
+    
+    return PROJECTS
+

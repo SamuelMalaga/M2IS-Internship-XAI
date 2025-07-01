@@ -8,7 +8,7 @@ EMBEDDING_MODEL = SentenceTransformer("dangvantuan/sentence-camembert-large",dev
 
 
 ##TODO: automatic handling of bigger inputs --> Testing case (150, 151) || Truncation works but there is a loss of information
-##It would be nice to have a more intelligent way to do that
+##It would be nice to have a more intelligent way to do that -> Summarization models (another one plugged here)
 def compute_similarity_embedding(target_project: Project, similar_project: Project):
 
     # embedded_target_project = EMBEDDING_MODEL.encode(target_project.description)
