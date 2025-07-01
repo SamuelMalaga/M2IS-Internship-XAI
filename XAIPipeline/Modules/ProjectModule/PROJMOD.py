@@ -26,10 +26,11 @@ def get_project(project_id: int) -> Project | None:
         )
         approved_project = bool(found_project['approved'])
 
-        if not approved_project:
-            return proj_obj
-        else:
-            return None
+        # if not approved_project:
+        #     return proj_obj
+        # else:
+        #     return None
+        return proj_obj
     except IndexError:
         raise ProjectNotFoundException("The passed project ID is either out of bounds or the project ID does not exists")
 
@@ -37,7 +38,7 @@ def get_same_district_winners(project:Project) -> list[Project]:
 
     district_winners_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==True)]
 
-    district_winners_df.sort_values(by='votes')
+    district_winners_df = district_winners_df.sort_values(by='votes', ascending=True)
 
     district_winners_projects = []
 
@@ -57,9 +58,43 @@ def get_same_district_winners(project:Project) -> list[Project]:
 
     return district_winners_projects
 
+def get_same_district_loosers(project:Project) -> list[Project]:
+
+    district_loosers_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==False)]
+
+    district_loosers_df = district_loosers_df.sort_values(by='votes', ascending=False)
+
+    district_loosers_projects = []
+
+    for index, row in district_loosers_df.iterrows():
+        project = Project(
+            id=row['project_id'],
+            title = row['project_name'], 
+            description = row['description'], 
+            cost = row['cost'], 
+            category = row['category'],
+            district=row['agg_quartiers'],
+            district_code=row['src_district_code'],
+            vote_count=row['votes']
+        )
+
+        district_loosers_projects.append(project)
+
+    return district_loosers_projects
+
 def get_district_vote_threshold(project:Project) -> int:
 
     district_winners_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==True)]
 
     return district_winners_df.min(axis=0)['votes']
+
+def get_all_projects()->list[Project]:
+
+    all_projects = []
+
+    for index, row in PROJECTS.iterrows():
+        found_project = get_project(row['project_id'])
+        all_projects.append(found_project)
+
+    return all_projects
 

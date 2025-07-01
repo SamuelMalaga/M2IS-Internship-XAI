@@ -22,6 +22,19 @@ def compute_voter_overlap(target_project:Project, compared_project:Project) -> f
 
     return len(intersection)/len(union)
 
+def compute_overlap_direction(target_project:Project, compared_project:Project) -> float:
+    target_project_votes = VOTER_MATRIX[VOTER_MATRIX['project_id']==target_project.id]
+    compared_project_votes = VOTER_MATRIX[VOTER_MATRIX['project_id']==compared_project.id]
+
+
+    target_project_voters = target_project_votes['ID'].unique().tolist()
+    compared_project_voters = compared_project_votes['ID'].unique().tolist()
+
+    overlap_set = list(set(target_project_voters) & set(compared_project_voters))
+
+    return len(overlap_set)/len(target_project_voters)
+
+
 
 ## This function is based on merge sort
 def rank_overlap(target_project:Project, projects_to_rank:list[Project]) -> None:
