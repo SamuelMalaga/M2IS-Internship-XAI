@@ -1,0 +1,698 @@
+{
+  "78": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [77],
+    "COMPETITOR PROJECT": [76, 77]
+  },
+  "122": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [125, 203]
+  },
+  "129": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [135, 132, 136]
+  },
+  "45": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [41],
+    "COMPETITOR PROJECT": [41, 43, 44]
+  },
+  "181": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [182]
+  },
+  "95": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [91, 99, 93, 201]
+  },
+  "137": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [132, 136, 128]
+  },
+  "97": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [98, 94, 201, 93, 91, 92, 99]
+  },
+  "170": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [172, 169]
+  },
+  "159": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162, 163]
+  },
+  "133": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [128]
+  },
+  "50": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [49],
+    "COMPETITOR PROJECT": false
+  },
+  "4": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [9, 11, 5, 6, 12]
+  },
+  "140": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [142, 141, 139]
+  },
+  "104": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [106, 107],
+    "COMPETITOR PROJECT": [106, 107, 102]
+  },
+  "190": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [189, 195, 193]
+  },
+  "36": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [34],
+    "COMPETITOR PROJECT": [34, 32, 38, 39]
+  },
+  "123": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "55": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [56]
+  },
+  "48": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [41, 43, 44]
+  },
+  "199": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [29, 25]
+  },
+  "147": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [139, 142]
+  },
+  "200": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [27, 25, 29]
+  },
+  "164": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162]
+  },
+  "70": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [67, 64, 69]
+  },
+  "143": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [144, 141, 139, 142]
+  },
+  "35": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "47": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [44, 43, 41, 49]
+  },
+  "8": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [6, 12, 5, 7, 9]
+  },
+  "20": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [19]
+  },
+  "160": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162]
+  },
+  "161": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162, 163]
+  },
+  "103": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [102, 105],
+    "COMPETITOR PROJECT": [107, 102]
+  },
+  "65": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [69],
+    "COMPETITOR PROJECT": [69, 64, 67]
+  },
+  "42": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [41, 44, 49]
+  },
+  "79": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [77, 72, 76, 71]
+  },
+  "24": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [29],
+    "COMPETITOR PROJECT": [29, 27, 25]
+  },
+  "81": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [82, 86, 84, 87]
+  },
+  "73": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [72, 71, 77]
+  },
+  "158": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162]
+  },
+  "185": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [183]
+  },
+  "10": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [6, 5]
+  },
+  "83": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [82, 86, 84, 87]
+  },
+  "112": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [116, 110]
+  },
+  "31": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "179": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [183]
+  },
+  "80": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [76]
+  },
+  "167": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162, 163]
+  },
+  "187": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "120": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "186": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [183]
+  },
+  "145": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [142],
+    "COMPETITOR PROJECT": [142, 139, 141, 144]
+  },
+  "74": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [72, 71, 76]
+  },
+  "194": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [192, 195]
+  },
+  "197": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [195],
+    "COMPETITOR PROJECT": [189, 195, 192]
+  },
+  "26": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [25, 27],
+    "COMPETITOR PROJECT": [25, 29, 27]
+  },
+  "127": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [125, 126, 203]
+  },
+  "53": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [52],
+    "COMPETITOR PROJECT": [52, 58]
+  },
+  "171": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [169, 172]
+  },
+  "154": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [149, 157, 153, 155, 156]
+  },
+  "40": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [39, 38],
+    "COMPETITOR PROJECT": [39, 32, 38, 34]
+  },
+  "57": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [60, 56, 58, 52]
+  },
+  "191": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [193],
+    "COMPETITOR PROJECT": [192, 195, 193, 189]
+  },
+  "59": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "21": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [16, 17, 19]
+  },
+  "173": {
+    "DESPRIORITIZED BY THE ALGORITHM": true,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [174, 177, 169, 172]
+  },
+  "46": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [49, 41]
+  },
+  "184": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [182]
+  },
+  "113": {
+    "DESPRIORITIZED BY THE ALGORITHM": true,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [110, 118, 116, 115]
+  },
+  "175": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [169, 172]
+  },
+  "23": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [25, 27],
+    "COMPETITOR PROJECT": [25, 27, 29]
+  },
+  "119": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [125, 126, 203]
+  },
+  "111": {
+    "DESPRIORITIZED BY THE ALGORITHM": true,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [110, 116, 118, 115]
+  },
+  "90": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [82, 84]
+  },
+  "130": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [132]
+  },
+  "18": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [16, 17]
+  },
+  "114": {
+    "DESPRIORITIZED BY THE ALGORITHM": true,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [110, 116, 118, 115]
+  },
+  "14": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [16, 19, 17]
+  },
+  "89": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [82, 84]
+  },
+  "30": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [27, 29, 25],
+    "COMPETITOR PROJECT": [27, 29, 25]
+  },
+  "63": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": [69],
+    "COMPETITOR PROJECT": [69, 64, 67, 68]
+  },
+  "54": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [56, 52, 58, 60]
+  },
+  "196": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [193, 195, 189, 192]
+  },
+  "66": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [67, 69, 68, 64]
+  },
+  "150": {
+    "DESPRIORITIZED BY THE ALGORITHM": true,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [155, 149, 153, 157, 156]
+  },
+  "62": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [64, 69, 67]
+  },
+  "178": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "85": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [82, 86]
+  },
+  "198": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [17, 19]
+  },
+  "176": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": false
+  },
+  "148": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [149, 155, 153, 157, 156]
+  },
+  "37": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [34],
+    "COMPETITOR PROJECT": [34, 39]
+  },
+  "180": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [183]
+  },
+  "165": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162]
+  },
+  "151": {
+    "DESPRIORITIZED BY THE ALGORITHM": true,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [156, 157, 153, 149, 155]
+  },
+  "124": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [203, 125, 126]
+  },
+  "75": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [76, 71, 72]
+  },
+  "33": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [32, 38, 39]
+  },
+  "121": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [125, 203]
+  },
+  "13": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [6]
+  },
+  "22": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [16, 17, 19]
+  },
+  "168": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [172],
+    "COMPETITOR PROJECT": false
+  },
+  "61": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [69]
+  },
+  "28": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": [25, 27],
+    "COMPETITOR PROJECT": [25]
+  },
+  "117": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [110, 116, 118, 115]
+  },
+  "51": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [52, 58, 56, 60]
+  },
+  "146": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [141, 142, 144]
+  },
+  "138": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [144, 141, 139]
+  },
+  "15": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [17, 19]
+  },
+  "134": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [136, 132, 128, 135]
+  },
+  "152": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [157, 156, 149]
+  },
+  "188": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [193, 195, 189]
+  },
+  "166": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": false,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [162, 163]
+  },
+  "88": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [82]
+  },
+  "109": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [110, 115]
+  },
+  "131": {
+    "DESPRIORITIZED BY THE ALGORITHM": false,
+    "LOOSER PROJECT": true,
+    "CLONE PROJECT": false,
+    "COMPETITOR PROJECT": [136, 135, 132]
+  }
+}

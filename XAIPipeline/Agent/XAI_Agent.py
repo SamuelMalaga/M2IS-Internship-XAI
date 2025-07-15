@@ -87,7 +87,14 @@ def check_top_k_loosing_projects(target_project:Project) -> bool:
     ##If not that check then it was just not appealing to the people of that district
 
 ##TODO: Find a way to calibrate the values
-def generate_explanation(project_id:int) -> None:
+def generate_explanation(project_id:int) -> None | dict[str:bool]:
+
+    result = {
+        "DESPRIORITIZED BY THE ALGORITHM": False,
+        "LOOSER PROJECT":False,
+        "CLONE PROJECT":False,
+        "COMPETITOR PROJECT":False
+    }
 
     project = PROJMOD.get_project(project_id = project_id)
 
@@ -102,26 +109,45 @@ def generate_explanation(project_id:int) -> None:
     similar_projects = get_similar(project, winners)
 
 
-    # ##Get projects that are similar and highly overlap
-    # common_and_overlapping = list(set(overlapping_projects) & set(similar_projects))
-
-    # print(check_top_k_loosing_projects(project))
-
     ##EX proj ID 111
     ##TODO: Find a better way to display it
     if check_budget_issue(project):
+        result["DESPRIORITIZED BY THE ALGORITHM"] = True
         print("DESPRIORITIZED BY THE ALGORITHM | The project was not selected because it had a cost that did not fit the budget at the selection time")
 
     ##EX proj ID 112
     ##TODO: Show a better way to display it (maybe show the position in which the project was)
     if not check_top_k_loosing_projects(project):
+        result["LOOSER PROJECT"] = True
         print(f"LOOSER PROJECT | The project was not selected because it was just not appealing to the public, it was behind the top {int(CONFIG_OBJ.get('LOOSER_TOLERANCE','top_k'))} runner up projects")
     
     ##Example of clone projects 101(gangnant) and 103, 52(gangnant) and 51, 52(gangnant) and 53, 40 and 38(gangnant), 5(gangnant) and 8, 12(gangnant) and 8
     ##26 and 28(gangnant), 26 and 25(gangnant) -> used projects to calibrate the similairity threshold
     if len(similar_projects) > 0:
+        similar_project_ids = []
+        for project in similar_projects:
+            similar_project_ids.append(project.id)
+        result["CLONE PROJECT"] = similar_project_ids      
         print("CLONE PROJECT | The project was not selected dua to votebase split, there was another project very similar to this one that had more votes")
 
     ##Example of overlapping projects 129
     if len(overlapping_projects) > 0:
+        overlapping_projects_ids=[]
+        for project in overlapping_projects:
+            overlapping_projects_ids.append(project.id)
+        result["COMPETITOR PROJECT"] = overlapping_projects_ids
         print("COMPETITOR PROJECT | The project was not selected because it didn't secure enough unique support. The high Overlap shows shared interest, but the winning project attracted more committed or additional voters, leading to its success.")
+
+    return result
+
+def simil_bypass(project_id1, project_id2):
+    project1 = PROJMOD.get_project(project_id = project_id1)
+    project2 = PROJMOD.get_project(project_id = project_id2)
+
+    print(SMOD.compute_similarity_embedding(project1, project2))
+
+def over_bypass(project_id1, project_id2):
+    project1 = PROJMOD.get_project(project_id = project_id1)
+    project2 = PROJMOD.get_project(project_id = project_id2)
+
+    print(OVERMOD.compute_voter_overlap(project1, project2))
