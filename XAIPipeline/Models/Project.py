@@ -1,4 +1,29 @@
 class Project:
+
+    """
+        Attributes
+        ----------
+        id : int
+            Unique identifier for the project.
+        title : str
+            The name or title of the project.
+        description : str
+            A brief summary or explanation of the project.
+        cost : int
+            Estimated or actual cost of implementing the project.
+        category : str
+            The category or type of project.
+        district_code : int
+            Numeric code representing the district where the project is proposed or implemented.
+        district : str
+            Name of the district where the project is proposed or implemented.
+        vote_count : int
+            Number of votes the project has received.
+        
+    """
+
+
+
     def __init__(self,id, title, description, cost, category, district_code,district, vote_count):
         self.id = id
         self.title=title

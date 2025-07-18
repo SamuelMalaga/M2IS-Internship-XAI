@@ -10,6 +10,18 @@ VOTE_DATAFRAME = OVERMOD.get_vote_data()
 #This needs to be calculated for the whole dataset but also for the people who voted for a specific district
 def calculate_exclusion_ratio() -> float:
 
+    """
+        This function returns the exclusion ratio for the election represented in the datasets
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        float
+
+    """
+
     vote_matrix  = pd.crosstab(VOTE_DATAFRAME['ID'], VOTE_DATAFRAME['project_id'])
 
     loosing_projects = PROJECT_DATAFRAME[PROJECT_DATAFRAME['approved']==False]
@@ -23,6 +35,3 @@ def calculate_exclusion_ratio() -> float:
     total_voters = VOTE_DATAFRAME.shape[0]
 
     return (unsatisfied_voters/total_voters)
-
-def hello_elecmod():
-    print("hello elecmod")

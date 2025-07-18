@@ -7,10 +7,22 @@ PROJECT_DETAILS_PATH = f"{pathlib.Path(__file__).parent.absolute()}/project_deta
 
 PROJECTS = pd.read_csv(PROJECT_DETAILS_PATH)
 
-def hello_proj():
-    print("Hello from proj")
 
-def get_project(project_id: int) -> Project | None:
+def get_project(project_id: int) -> Project:
+
+    """
+        This returns a project object based on a specific project ID
+
+        Parameters
+        ----------
+        target_project : int
+            the project_id that you want to convert to Project object
+
+        Returns
+        -------
+        Project
+
+    """
 
     try:
         found_project = PROJECTS.loc[PROJECTS['project_id']==project_id].iloc[0]
@@ -26,15 +38,25 @@ def get_project(project_id: int) -> Project | None:
         )
         approved_project = bool(found_project['approved'])
 
-        # if not approved_project:
-        #     return proj_obj
-        # else:
-        #     return None
         return proj_obj
     except IndexError:
         raise ProjectNotFoundException("The passed project ID is either out of bounds or the project ID does not exists")
 
 def get_same_district_winners(project:Project) -> list[Project]:
+
+    """
+        This function retrieves the winners of the same district as the target project
+
+        Parameters
+        ----------
+        project : Project
+            project of which you want tot get the same district winners
+
+        Returns
+        -------
+        list[Projects]
+
+    """
 
     district_winners_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==True)]
 
@@ -60,6 +82,20 @@ def get_same_district_winners(project:Project) -> list[Project]:
 
 def get_same_district_loosers(project:Project) -> list[Project]:
 
+    """
+        This function retrieves the loosers of the same district as the target project
+
+        Parameters
+        ----------
+        project : Project
+            project of which you want tot get the same district loosers
+
+        Returns
+        -------
+        list[Projects]
+
+    """
+
     district_loosers_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==False)]
 
     district_loosers_df = district_loosers_df.sort_values(by='votes', ascending=False)
@@ -84,11 +120,38 @@ def get_same_district_loosers(project:Project) -> list[Project]:
 
 def get_district_vote_threshold(project:Project) -> int:
 
+    """
+        This function retrieves the vote threshold for a project to be approved in a specific district
+
+        Parameters
+        ----------
+        project : Project
+            project of which you want to get the same district vote threshold
+
+        Returns
+        -------
+        int
+
+    """
+
     district_winners_df = PROJECTS.loc[(PROJECTS['src_district_code']==project.district_code) & (PROJECTS['approved']==True)]
 
     return district_winners_df.min(axis=0)['votes']
 
 def get_all_projects()->list[Project]:
+
+    """
+        This function converts all projects in the dataset to project objects
+
+        Parameters
+        ----------
+        
+
+        Returns
+        -------
+        list[Projects]
+
+    """
 
     all_projects = []
 
@@ -99,6 +162,19 @@ def get_all_projects()->list[Project]:
     return all_projects
 
 def get_project_data() -> pd.DataFrame:
+
+    """
+        This function returns a dataframe of the project data
+
+        Parameters
+        ----------
+       
+
+        Returns
+        -------
+        pd.DataFrame
+
+    """
 
     project_data = PROJECTS.copy()
     

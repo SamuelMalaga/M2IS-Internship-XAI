@@ -10,7 +10,19 @@ PROJECT_DETAILS_FILE_PATH =f"{pathlib.Path(__file__).parent.parent.parent.absolu
 
 INI_FILE_PATH =f"{pathlib.Path(__file__).parent.parent.parent.absolute()}/XAIConf"
 
-def check_voter_matrix():
+def check_voter_matrix() -> bool:
+
+    """
+        This function returns if the voter matrix file is present or not in the pipeline structure
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        bool
+
+    """
     
     for file in os.listdir(VOTER_MATRIX_FILE_PATH):
         if file == 'voter_project_matrix.csv':
@@ -20,7 +32,19 @@ def check_voter_matrix():
     print("voter matrix file: NOT FOUND\n")
     return False
 
-def check_project_details():
+def check_project_details() -> bool:
+
+    """
+        This function returns if the project details file is present or not in the pipeline structure
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        bool
+
+    """
 
     for file in os.listdir(PROJECT_DETAILS_FILE_PATH):
         if file == 'project_details.csv':
@@ -30,7 +54,19 @@ def check_project_details():
     print("project details file: NOT FOUND\n")
     return False
 
-def check_ini_file():
+def check_ini_file() -> bool:
+
+    """
+        This function returns if the XAI.ini file is present or not in the pipeline structure
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        bool
+
+    """
 
     for file in os.listdir(INI_FILE_PATH):
         if file == 'XAI.ini':
@@ -43,7 +79,21 @@ def check_ini_file():
 
 
 
-def check_preexisting_files():
+def check_preexisting_files() -> bool:
+
+    """
+        This function runs all the file checking functions and return true or false depending on their existance and kills the application if they are not present
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        bool
+
+    """
+
+
     print("Checking for essential analysis files\n")
 
     voter_matrix_exists = check_voter_matrix()

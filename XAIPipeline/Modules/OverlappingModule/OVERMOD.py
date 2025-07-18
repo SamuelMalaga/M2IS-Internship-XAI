@@ -8,6 +8,22 @@ VOTER_MATRIX = pd.read_csv(VOTER_MATRIX_PATH,sep=";")
 
 
 def compute_voter_overlap(target_project:Project, compared_project:Project) -> float:
+
+    """
+        This function compute the overlap of voterbase between two projects using the jaccard distance
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to check the budget issue status
+        compared_project : Project
+            the project that you want to check the overlapping votebase related to the target project
+
+        Returns
+        -------
+        float
+
+    """
     
     target_project_votes = VOTER_MATRIX[VOTER_MATRIX['project_id']==target_project.id]
     compared_project_votes = VOTER_MATRIX[VOTER_MATRIX['project_id']==compared_project.id]
@@ -23,6 +39,23 @@ def compute_voter_overlap(target_project:Project, compared_project:Project) -> f
     return len(intersection)/len(union)
 
 def compute_overlap_direction(target_project:Project, compared_project:Project) -> float:
+
+    """
+        This function compute the direction of overlap between two votebases that intersect
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to check the budget issue status
+        compared_project : Project
+            the project that you want to check the overlapping votebase related to the target project
+
+        Returns
+        -------
+        float
+
+    """
+
     target_project_votes = VOTER_MATRIX[VOTER_MATRIX['project_id']==target_project.id]
     compared_project_votes = VOTER_MATRIX[VOTER_MATRIX['project_id']==compared_project.id]
 
@@ -38,6 +71,24 @@ def compute_overlap_direction(target_project:Project, compared_project:Project) 
 
 ## This function is based on merge sort
 def rank_overlap(target_project:Project, projects_to_rank:list[Project]) -> None:
+
+    """
+        This function orders in place via merge sort the most overlapping projects on a list related to the target project
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to check the budget issue status
+        projects_to_rank : list[Project]
+            the list of projects that you want to rank
+
+        Returns
+        -------
+        None
+
+    """
+
+
     if len(projects_to_rank) > 1:
         left_arr = projects_to_rank[0:len(projects_to_rank)//2]
         right_arr = projects_to_rank[len(projects_to_rank)//2:]
@@ -73,6 +124,19 @@ def rank_overlap(target_project:Project, projects_to_rank:list[Project]) -> None
 
 
 def get_vote_data() -> pd.DataFrame:
+
+    """
+        This function returns a dataframe of the voting data
+
+        Parameters
+        ----------
+       
+
+        Returns
+        -------
+        pd.DataFrame
+
+    """
     
     vote_data = VOTER_MATRIX.copy()
 

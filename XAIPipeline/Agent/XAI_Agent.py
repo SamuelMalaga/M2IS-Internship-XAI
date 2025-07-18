@@ -15,6 +15,22 @@ CONFIG_OBJ.read(CONFIG_FILE_PATH)
 #Return the most similar winning projects to the target project
 def get_similar(target_project: Project, district_winning_projects: list[Project]) -> list[Project]:
 
+    """
+        This function returns a list of project objects that are higher than a certain degree of similarity related to the target project.
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to compare with the winners (it must be a loosing project)
+        district_winning_projects : list[Project]
+            the project winners of the same district as the target project
+
+        Returns
+        -------
+        list[Projects]
+
+    """
+
     ##TODO: add a check to see if the threshold value exists
     similarity_treshold = float(CONFIG_OBJ.get('SIMILARITY','similarity_treshold'))
 
@@ -29,6 +45,22 @@ def get_similar(target_project: Project, district_winning_projects: list[Project
 
 #Return the most overlapping winning projects to the target project
 def get_overlapping(target_project: Project, district_winning_projects: list[Project]) -> list[Project]:
+
+    """
+        This function returns a list of project objects that more overlapping than a certain degree of vote base overlap related to the target project.
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to compare with the winners (it must be a loosing project)
+        district_winning_projects : list[Project]
+            the project winners of the same district as the target project
+
+        Returns
+        -------
+        list[Projects]
+
+    """
     
     OVERMOD.rank_overlap(target_project,district_winning_projects)
 
@@ -45,6 +77,23 @@ def get_overlapping(target_project: Project, district_winning_projects: list[Pro
 
 ## Check if the project had enough votes to be approved but wasn't because of algorithm despriorization
 def check_budget_issue(target_project: Project) -> bool:
+
+    """
+        This function returns true is the project had enough votes to be approved but the budget was higher than the remaining budget at the time of 
+        algorithmic selection
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to check the budget issue status
+
+        Returns
+        -------
+        boolean
+
+    """
+
+
     district_vote_threshold = PROJMOD.get_district_vote_threshold(target_project)
 
     if target_project.vote_count >= district_vote_threshold:
@@ -53,6 +102,20 @@ def check_budget_issue(target_project: Project) -> bool:
         return False
 
 def check_top_k_loosing_projects(target_project:Project) -> bool:
+
+    """
+        This function returns true if the project is located in the next k runner ups for algorithm selection
+
+        Parameters
+        ----------
+        target_project : Project
+            the target project that you want to compare with the winners (it must be a loosing project)
+
+        Returns
+        -------
+        boolean
+
+    """
 
     district_loosing_projects = PROJMOD.get_same_district_loosers(target_project)
 
@@ -88,6 +151,22 @@ def check_top_k_loosing_projects(target_project:Project) -> bool:
 
 ##TODO: Find a way to calibrate the values
 def generate_explanation(project_id:int) -> None | dict[str:bool]:
+
+    """
+        This function returns a dictionary with the explanations about why a project did not won the election
+
+        Parameters
+        ----------
+        target_project : project_id
+            the id of the project to generate explanations based on
+        
+
+        Returns
+        -------
+        dict
+            None
+
+    """
 
     result = {
         "DESPRIORITIZED BY THE ALGORITHM": False,
@@ -139,15 +218,3 @@ def generate_explanation(project_id:int) -> None | dict[str:bool]:
         print("COMPETITOR PROJECT | The project was not selected because it didn't secure enough unique support. The high Overlap shows shared interest, but the winning project attracted more committed or additional voters, leading to its success.")
 
     return result
-
-def simil_bypass(project_id1, project_id2):
-    project1 = PROJMOD.get_project(project_id = project_id1)
-    project2 = PROJMOD.get_project(project_id = project_id2)
-
-    print(SMOD.compute_similarity_embedding(project1, project2))
-
-def over_bypass(project_id1, project_id2):
-    project1 = PROJMOD.get_project(project_id = project_id1)
-    project2 = PROJMOD.get_project(project_id = project_id2)
-
-    print(OVERMOD.compute_voter_overlap(project1, project2))
